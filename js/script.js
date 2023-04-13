@@ -61,7 +61,7 @@ class Squirrel {
     this.x -= 2
   }
   draw() {
-    ctx.drawImage(squirrelImg, this.x, this.y, 100, 100); //keep the 100s
+    ctx.drawImage(squirrelImg, this.x, this.y, 100, 100);
   }
 }
 
@@ -83,7 +83,7 @@ function checkCollision(squirrel) {
   }
   return false;
 }
-console.log(squirrelImg.width, "this is the squirrel image width");
+
 function animationLoop() {
 
   ctx.clearRect(0, 0, 1200, 600);
