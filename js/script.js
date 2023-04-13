@@ -66,9 +66,9 @@ class Squirrel {
 }
 
 function generateSquirrels() {
-  console.log("new squirrel")
+
   squirrelArray.push(new Squirrel())
-  console.log("squirrel", squirrelArray)
+
 }
 
 
@@ -99,8 +99,7 @@ function animationLoop() {
     squirrelArray[i].draw()
 
     if (checkCollision(squirrelArray[i])) {
-      console.log("dug", dug)
-      console.log("squirrel 104", squirrelArray[i])
+
       gameOn = false;
       clearInterval(animationId);
       clearInterval(squirrelId);
