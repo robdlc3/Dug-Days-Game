@@ -3,10 +3,10 @@ const ctx = canvas.getContext('2d');
 
 let gameOn = false;
 
-let squirrelArray = [] //obstacle  = squirrel array
+let squirrelArray = []
 
 let animationId;
-let squirrelId; // obstacle  = squirrel
+let squirrelId;
 
 const background = new Image()
 background.src = './images/forest-bg.png'
