@@ -112,28 +112,12 @@ function animationLoop() {
   }
 
 }
-// squirrelArray.forEach((squirrel, i, arr) => {
-//   if (squirrel.x < 0) {
-//     arr.splice(i, 1)
-//   }
-//   squirrel.update()
-//   squirrel.draw()
-
-//   if (checkCollision(squirrel)) {
-//     gameOn = false;
-//     clearInterval(animationId);
-//     clearInterval(squirrelId);
-//     ctx.font = '50px Arial';
-//     ctx.fillStyle = 'red';
-//     ctx.fillText('Game Over', 500, 300);
-//   }
-// })
 
 
 function startGame() {
   gameOn = true;
   animationId = setInterval(animationLoop, 16);
-  squirrelId = setInterval(generateSquirrels, 3000); // probably 3000 better
+  squirrelId = setInterval(generateSquirrels, 3000);
 
 }
 
